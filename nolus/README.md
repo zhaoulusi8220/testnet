@@ -1,7 +1,5 @@
 # Services
 
-<figure><img src="https://avatars.githubusercontent.com/u/64387774?v=4" width="150" alt=""><figcaption></figcaption></figure>
-
 Nolus aims to be the leading DeFi Lease platform. The protocol  intends to become a tool for empowering people, simple to use, and highly efficient.
 
 **Chain ID**: nolus-rila | **Latest Version Tag**: v0.1.43 | **Wasm**: ON

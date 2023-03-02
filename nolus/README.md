@@ -14,6 +14,12 @@
 
 ## Instructions
 
+### First, create a session
+
+```bash
+screen -R install
+```
+
 ### Stop the service and reset the data
 
 ```bash

@@ -40,3 +40,12 @@ mv $HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validato
 ```bash
 sudo systemctl start nolusd && sudo journalctl -u nolusd -f --no-hostname -o cat
 ```
+### Log out and log in session
+
+```bash
+to get out of
+ctrl + a + d
+
+to enter the session
+screen -r name_session
+```

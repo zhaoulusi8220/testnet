@@ -8,7 +8,7 @@
 * api: [https://api.nolus.botga.gq](https://api.nolus.botga.gq)
 * rpc: [https://rpc.nolus.botga.gq](https://rpc.nolus.botga.gq)
 * grpc: [https://grpc.nolus.botga.gq](https://grpc.nolus.botga.gq)
-* grpc-web: [https://grpc-web.nolus.botga.gq](https://grpc.nolus.botga.gq)
+* grpc-web: [https://grpc-web.nolus.botga.gq](https://grpc-web.nolus.botga.gq)
 
 # Snapshot
 

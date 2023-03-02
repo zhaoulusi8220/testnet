@@ -5,17 +5,12 @@ Nolus aims to be the leading DeFi Lease platform. The protocol  intends to becom
 **Chain ID**: nolus-rila | **Latest Version Tag**: v0.1.43 | **Wasm**: ON
 
 
-
-
-
-## Chain explorer
-[https://explorer.kjnodes.com/nolus-testnet](https://explorer.kjnodes.com/nolus-testnet)
-
 ## Public endpoints
 
-* api: [https://nolus-testnet.api.kjnodes.com](https://nolus-testnet.api.kjnodes.com)
-* rpc: [https://nolus-testnet.rpc.kjnodes.com](https://nolus-testnet.rpc.kjnodes.com)
-* grpc: [https://nolus-testnet.grpc.kjnodes.com](https://nolus-testnet.grpc.kjnodes.com)
+* api: [https://api.nolus.botga.gq](https://api.nolus.botga.gq)
+* rpc: [https://rpc.nolus.botga.gq](https://rpc.nolus.botga.gq)
+* grpc: [https://grpc.nolus.botga.gq](https://grpc.nolus.botga.gq)
+* grpc-web: [https://grpc-web.nolus.botga.gq](https://grpc.nolus.botga.gq)
 
 ## Peering
 

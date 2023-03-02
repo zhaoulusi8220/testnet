@@ -10,27 +10,27 @@
 * grpc: [https://grpc.nolus.botga.gq](https://grpc.nolus.botga.gq)
 * grpc-web: [https://grpc-web.nolus.botga.gq](https://grpc.nolus.botga.gq)
 
-## Peering
+# Snapshot
 
-**state-sync**
+## Instructions
 
-```text
-d5519e378247dfb61dfe90652d1fe3e2b3005a5b@nolus-testnet.rpc.kjnodes.com:43656
-```
+### Stop the service and reset the data
 
-**seed-node**
-
-```text
-3f472746f46493309650e5a033076689996c8881@nolus-testnet.rpc.kjnodes.com:43659
-```
-
-**addrbook**
 ```bash
-curl -Ls https://snapshots.kjnodes.com/nolus-testnet/addrbook.json > $HOME/.nolus/config/addrbook.json
+sudo systemctl stop nolusd
+cp $HOME/.nolus/data/priv_validator_state.json $HOME/.nolus/priv_validator_state.json.backup
+rm -rf $HOME/.nolus/data
 ```
 
-**live-peers** (4)
+### Download latest snapshot
+
 ```bash
-peers="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@65.109.68.190:43656,87e0efe332fdc4b0c2a76d18761a936509762067@212.41.9.98:36656,3fc0879882601b7d80117f7db73ab9880898e0ea@168.119.89.31:45656,7a1fc4d1cc0ffec7db6a2a15496136e62561b162@161.97.146.108:26656"
-sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"$peers\"|" $HOME/.nolus/config/config.toml
+curl -L https://snapshots.kjnodes.com/nolus-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus
+mv $HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validator_state.json
+```
+
+### Restart the service and check the log
+
+```bash
+sudo systemctl start nolusd && sudo journalctl -u nolusd -f --no-hostname -o cat
 ```

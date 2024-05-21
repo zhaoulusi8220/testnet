@@ -22,7 +22,7 @@ screen -R install
 ### Stop the service and reset the data
 
 ```bash
-sudo systemctl stop nolusd
+sudo systemctl stop initiad
 cp $HOME/.initia/data/priv_validator_state.json $HOME/.initia/priv_validator_state.json.backup
 rm -rf $HOME/.nolus/data
 ```
@@ -37,7 +37,7 @@ mv $HOME/.initia/priv_validator_state.json.backup $HOME/.initia/data/priv_valida
 ### Restart the service and check the log
 
 ```bash
-sudo systemctl start nolusd && sudo journalctl -u nolusd -f --no-hostname -o cat
+sudo systemctl start initiad && sudo journalctl -u initiad -f --no-hostname -o cat
 ```
 ### Log out and log in session
 

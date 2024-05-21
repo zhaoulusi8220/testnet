@@ -24,7 +24,7 @@ screen -R install
 ```bash
 sudo systemctl stop initiad
 cp $HOME/.initia/data/priv_validator_state.json $HOME/.initia/priv_validator_state.json.backup
-rm -rf $HOME/.nolus/data
+rm -rf $HOME/.initia/data
 ```
 
 ### Download latest snapshot
